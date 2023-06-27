@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ts项目可能有很多ts文件，打包就会很多js文件，一一引入很麻烦，使用"outFile": "./build/page.js", 把"module": "commonjs"改为"module": "amd" -->
+    <!-- 他就会只打包一个js文件 -->
+    <script src="./build/page.js"></script>
+    <script src="./build/components.js"></script>
+</head>
+
+<body>
+    <script>
+        new Home.Page();
+    </script>
+</body>
+
+</html>
